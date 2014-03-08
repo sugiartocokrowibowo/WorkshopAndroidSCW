@@ -1,0 +1,46 @@
+package com.example.android017_tablayout;
+
+import android.os.Bundle;
+import android.app.TabActivity;
+import android.content.Intent;
+import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
+
+public class MainActivity extends TabActivity {
+	
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+         
+        TabHost tabHost = getTabHost();
+         
+        // Tab for Tab Satu
+        TabSpec tabSatu = tabHost.newTabSpec("Tab Satu");
+        // setting Title and Icon for the Tab
+        tabSatu.setIndicator("Tab Satu", getResources().getDrawable(R.drawable.icon_bookmark));
+        Intent tabSatuIntent = new Intent(this, TabSatu.class);
+        tabSatu.setContent(tabSatuIntent);
+        
+        // Tab for Tab Dua
+        TabSpec tabDua = tabHost.newTabSpec("Tab Dua");
+        // setting Title and Icon for the Tab
+        tabDua.setIndicator("Tab Dua", getResources().getDrawable(R.drawable.icon_bookmark));
+        Intent tabDuaIntent = new Intent(this, TabDua.class);
+        tabDua.setContent(tabDuaIntent);        
+        
+        // Tab for Tab Dua
+        TabSpec tabTiga = tabHost.newTabSpec("Tab Tiga");
+        // setting Title and Icon for the Tab
+        tabTiga.setIndicator("Tab Tiga", getResources().getDrawable(R.drawable.icon_more));
+        Intent tabTigaIntent = new Intent(this, TabDua.class);
+        tabTiga.setContent(tabTigaIntent);
+        
+        // Adding all TabSpec to TabHost
+        tabHost.addTab(tabSatu); 
+        tabHost.addTab(tabDua);
+        tabHost.addTab(tabTiga);
+    }
+
+    
+}

@@ -1,0 +1,27 @@
+package com.example.android023_sendsms;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.telephony.SmsMessage;
+import android.view.Menu;
+
+public class SMSReceiver extends BroadcastReceiver {
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Bundle bundle	  	= intent.getExtras();
+		SmsMessage[]msgs	= null;
+		
+		String str	= "";
+		if(bundle!=null){
+			Object[]pdus	= (Object[])bundle.get("pdus");
+			
+		}
+		
+	}
+	
+
+}

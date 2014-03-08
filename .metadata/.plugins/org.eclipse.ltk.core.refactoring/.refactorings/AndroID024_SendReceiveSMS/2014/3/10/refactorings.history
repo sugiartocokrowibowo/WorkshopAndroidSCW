@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change Layout" description="Change Layout" file="/AndroID024_SendReceiveSMS/res/layout/activity_main.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/AndroID024_SendReceiveSMS" sel-end="783" sel-start="0" stamp="1394224260423" type="android.widget.LinearLayout"/>
+</session>

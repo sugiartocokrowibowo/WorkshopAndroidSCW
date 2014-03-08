@@ -1,0 +1,23 @@
+package com.example.android024_sendreceivesms;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.telephony.SmsMessage;
+
+public class SMSReceiver extends BroadcastReceiver {
+	public SMSReceiver() {
+	}
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Bundle bundle		= intent.getExtras();
+		SmsMessage[]msgs	= null;
+		
+		String str			= "";
+		
+		
+		throw new UnsupportedOperationException("Not yet implemented");
+	}
+}

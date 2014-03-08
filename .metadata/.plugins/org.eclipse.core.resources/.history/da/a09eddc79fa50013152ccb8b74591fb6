@@ -1,0 +1,11 @@
+package com.example.android017_tablayout;
+
+import android.os.Bundle;
+import android.app.TabActivity;
+import android.view.Menu;
+
+public class MainActivity extends TabActivity {
+	
+
+    
+}

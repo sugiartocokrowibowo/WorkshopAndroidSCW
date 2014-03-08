@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.android006_notificationmanager.Notification&apos; to &apos;Notifikasi&apos;&#x0D;&#x0A;- Original project: &apos;AndroID006_NotificationManager&apos;&#x0D;&#x0A;- Original element: &apos;com.example.android006_notificationmanager.Notification&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.android006_notificationmanager.Notifikasi&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Notification&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.example.android006_notificationmanager{Notification.java[Notification" matchStrategy="1" name="Notifikasi" qualified="false" references="true" similarDeclarations="false" stamp="1394079437250" textual="false" version="1.0"/>
+</session>

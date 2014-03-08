@@ -1,0 +1,40 @@
+package com.example.android010_mengaturpropertiintent;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	
+	int request_code	= 1;	
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+    @Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode==KeyEvent.KEYCODE_F2){
+			Intent inten	= new Intent("android.intent.action.NEXT");
+			Bundle extras	= new Bundle();
+			extras.putString("nama", "Tulis Nama Anda Disini!");
+			inten.putExtras(extras);
+			startActivityForResult(inten, request_code);			
+		}
+		return false;
+	}
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data){
+		if(requestCode==request_code&&resultCode==RESULT_OK){
+			Toast.makeText(getBaseContext(), data.getData().toString(), Toast.LENGTH_SHORT).show();
+		}
+	}
+	
+}

@@ -1,0 +1,39 @@
+package com.example.android018_webview;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        WebView wv	= (WebView) findViewById(R.id.webView1);
+		wv.setWebViewClient(new Callback());
+		WebSettings websettings	= wv.getSettings();
+		websettings.setBuiltInZoomControls(true);
+		wv.loadUrl("http://www.google.com");
+		
+		/*
+		WebView wv	= (WebView) findViewById(R.id.webView1);
+		wv.setWebViewClient(new Callback());
+		WebSettings websettings	= wv.getSettings();
+		websettings.setBuiltInZoomControls(true);
+		final String mimetype	= "text/html";
+		final String encoding	= "UTF-8";
+		String shtml				= "<H1>Workshop Android Aptikom IX</H1><p>ternyata android mudah</p>";
+		wv.loadData(shtml, mimetype, encoding);
+		*/
+
+		
+    }
+
+
+    
+    
+}

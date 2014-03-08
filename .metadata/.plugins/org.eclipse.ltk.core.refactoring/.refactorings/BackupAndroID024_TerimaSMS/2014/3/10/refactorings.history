@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SMSReceiver.java&apos; to &apos;AndroID024_TerimaSMS/src/com.example.android_terimasms&apos;&#x0D;&#x0A;- Original project: &apos;AndroID024_TerimaSMS&apos;&#x0D;&#x0A;- Destination element: &apos;AndroID024_TerimaSMS/src/com.example.android_terimasms&apos;&#x0D;&#x0A;- Original element: &apos;SMSReceiver.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.example.android_terimasms" element1="/src&lt;{SMSReceiver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1394216897025" units="1" version="1.0"/>
+</session>

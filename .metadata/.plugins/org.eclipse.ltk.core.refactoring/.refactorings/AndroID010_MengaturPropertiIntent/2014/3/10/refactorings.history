@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change Layout" description="Change Layout" file="/AndroID010_MengaturPropertiIntent/res/layout/activity_next.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/AndroID010_MengaturPropertiIntent" sel-end="1372" sel-start="0" stamp="1394090660367" type="android.widget.LinearLayout"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change Layout" description="Change Layout" file="/AndroID009_MenangkapPropertiIntent/res/layout/activity_kedua.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/AndroID009_MenangkapPropertiIntent" sel-end="784" sel-start="0" stamp="1394089885696" type="android.widget.LinearLayout"/>
+</session>

@@ -1,0 +1,34 @@
+package com.example.android020_texttospeech;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	
+	EditText editText;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        editText			= (EditText)findViewById(R.id.editText1);
+        Button	button1		= (Button)findViewById(R.id.button1);
+        Button	button2		= (Button)findViewById(R.id.button2);
+        
+    }
+    
+    private void sayIt() {
+
+        String text = editText.getText().toString();
+        if (text.equals("")){
+     	   Toast.makeText(MainActivity.this, "Please Type Text First !", Toast.LENGTH_SHORT).show();
+        }else{
+     	   texttospeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }
+    }
+    
+}

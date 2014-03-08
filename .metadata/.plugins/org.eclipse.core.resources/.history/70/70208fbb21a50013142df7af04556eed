@@ -1,0 +1,30 @@
+package com.example.android013_menumenggunakanfilejava;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.add("Menu 0");
+		menu.add("Menu 1");
+		menu.add("Menu 2");
+		menu.add("Menu 3");
+		menu.add("Menu 4");
+		menu.add("Menu 5");
+		menu.add("Menu 6");
+		menu.add("Menu 7");
+		return super.onCreateOptionsMenu(menu);
+	}
+    
+    
+    
+}

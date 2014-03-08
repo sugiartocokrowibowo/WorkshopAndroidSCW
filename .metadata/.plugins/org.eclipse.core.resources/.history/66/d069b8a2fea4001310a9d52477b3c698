@@ -1,0 +1,29 @@
+package com.example.android009_menangkappropertiintent;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class ActivityKedua extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_kedua);
+		Button btn	= (Button) findViewById(R.id.button1);
+		btn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Intent data = new Intent();
+				EditText txt_username	= (EditText) findViewById(R.id.editText1);
+				data.setData(Uri.parse(txt_username.getText().toString()));
+				setResult(RESULT_OK, data);
+				
+				finish();				
+			}
+		});
+	}
+
+}
